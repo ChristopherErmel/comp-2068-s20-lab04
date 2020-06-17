@@ -1,0 +1,24 @@
+<%- include ('../partials/header') %>
+
+<div class="container my-5 mx-auto text-center">
+  <!-- Add in your own product display -->
+  <header>
+      <h1>Product Page for '<%= product.name %>'</h1>
+  </header>
+  <hr>  
+  <div class="card mb-4 box-shadow">
+    <div class="card-header">
+      <h1 class="my-0 font-weight-normal"><%= product.name %></h1>
+    </div>    
+    <div class="card-body">
+        <!-- use a '-' to output the proper html... no syntax -->
+        <p class="card-title pricing-card-title">Description: <%- product.Description %></p>
+    </div> 
+    <div class="card-body">
+      <!-- use a '-' to output the proper html... no syntax -->
+      <h2 class="text-muted">Price: $<%- product.price %></h2> 
+  </div> 
+  </div>
+</div>
+
+<%- include ('../partials/footer') %>
